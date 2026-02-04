@@ -38,6 +38,8 @@ import MPollBody from "./MPollBody";
 import MLocationBody from "./MLocationBody";
 import MjolnirBody from "./MjolnirBody";
 import MBeaconBody from "./MBeaconBody";
+import MClaudeBody from "./MClaudeBody";
+import { EZAGENT_CLAUDE_MSGTYPE } from "../../../@types/EzAgentMessages";
 import { type GetRelationsForEvent, type IEventTileOps } from "../rooms/EventTile";
 import { DecryptionFailureBodyViewModel } from "../../../viewmodels/message-body/DecryptionFailureBodyViewModel";
 
@@ -70,6 +72,8 @@ const baseBodyTypes = new Map<string, React.ComponentType<IBodyProps>>([
     [MsgType.File, MFileBody],
     [MsgType.Audio, MVoiceOrAudioBody],
     [MsgType.Video, MVideoBody],
+    // EzAgent custom message types
+    [EZAGENT_CLAUDE_MSGTYPE, MClaudeBody],
 ]);
 const baseEvTypes = new Map<string, React.ComponentType<IBodyProps>>([
     [EventType.Sticker, MStickerBody],

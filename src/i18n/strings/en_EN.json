@@ -29,6 +29,18 @@
         "user_menu": "User menu"
     },
     "a11y_jump_first_unread_room": "Jump to first unread room.",
+    "agents_viewer": {
+        "title": "Agent Events",
+        "message_type": "Message Type",
+        "agent": "Agent",
+        "all_types": "All Types",
+        "all_agents": "All Agents",
+        "no_events": "No agent events found",
+        "showing": {
+            "one": "Showing %(count)s of %(total)s event",
+            "other": "Showing %(count)s of %(total)s events"
+        }
+    },
     "action": {
         "accept": "Accept",
         "add": "Add",
@@ -748,6 +760,13 @@
         "default_cover_photo": "The <photo>default cover photo</photo> is © <author>Jesús Roncero</author> used under the terms of <terms>CC-BY-SA 4.0</terms>.",
         "twemoji": "The <twemoji>Twemoji</twemoji> emoji art is © <author>Twitter, Inc and other contributors</author> used under the terms of <terms>CC-BY 4.0</terms>.",
         "twemoji_colr": "The <colr>twemoji-colr</colr> font is © <author>Mozilla Foundation</author> used under the terms of <terms>Apache 2.0</terms>."
+    },
+    "claude": {
+        "thinking": "Thinking",
+        "tool_calls": {
+            "one": "Tool Call (%(count)s)",
+            "other": "Tool Calls (%(count)s)"
+        }
     },
     "decline_invitation_dialog": {
         "confirm": "Are you sure you want to decline the invitation to join \"%(roomName)s\"?",
