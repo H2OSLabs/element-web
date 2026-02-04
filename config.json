@@ -1,0 +1,39 @@
+{
+    "default_server_config": {
+        "m.homeserver": {
+            "base_url": "https://matrix.ezagent.chat",
+            "server_name": "ezagent.chat"
+        },
+        "m.identity_server": {
+            "base_url": "https://identity.ezagent.chat"
+        }
+    },
+    "brand": "EzAgent",
+    "integrations_ui_url": null,
+    "integrations_rest_url": null,
+    "integrations_widgets_urls": null,
+    "disable_custom_urls": false,
+    "disable_guests": true,
+    "disable_login_language_selector": false,
+    "disable_3pid_login": false,
+    "default_country_code": "CN",
+    "default_theme": "light",
+    "room_directory": {
+        "servers": ["ezagent.chat"]
+    },
+    "features": {
+        "feature_video_rooms": true
+    },
+    "show_labs_settings": true,
+    "default_federate": true,
+    "setting_defaults": {
+        "breadcrumbs": true
+    },
+    "jitsi": {
+        "preferred_domain": "meet.element.io"
+    },
+    "element_call": {
+        "url": "https://call.element.io",
+        "brand": "Element Call"
+    }
+}
