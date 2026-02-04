@@ -28,6 +28,7 @@ import ExportArchiveIcon from "@vector-im/compound-design-tokens/assets/web/icon
 import LeaveIcon from "@vector-im/compound-design-tokens/assets/web/icons/leave";
 import FilesIcon from "@vector-im/compound-design-tokens/assets/web/icons/files";
 import ExtensionsIcon from "@vector-im/compound-design-tokens/assets/web/icons/extensions";
+import ChatIcon from "@vector-im/compound-design-tokens/assets/web/icons/chat";
 import UserProfileIcon from "@vector-im/compound-design-tokens/assets/web/icons/user-profile";
 import ThreadsIcon from "@vector-im/compound-design-tokens/assets/web/icons/threads";
 import PollsIcon from "@vector-im/compound-design-tokens/assets/web/icons/polls";
@@ -275,6 +276,11 @@ const RoomSummaryCardView: React.FC<IProps> = ({
                             Icon={ExtensionsIcon}
                             label={_t("right_panel|extensions_button")}
                             onSelect={vm.onRoomExtensionsClick}
+                        />
+                        <MenuItem
+                            Icon={ChatIcon}
+                            label={_t("agents_viewer|button")}
+                            onSelect={vm.onRoomAgentsClick}
                         />
                     </>
                 )}

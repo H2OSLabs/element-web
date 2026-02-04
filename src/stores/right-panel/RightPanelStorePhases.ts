@@ -28,6 +28,9 @@ export enum RightPanelPhases {
     // Thread stuff
     ThreadView = "ThreadView",
     ThreadPanel = "ThreadPanel",
+
+    // EzAgent stuff
+    AgentsEventViewer = "AgentsEventViewer",
 }
 
 export function backLabelForPhase(phase: RightPanelPhases | null): string | null {

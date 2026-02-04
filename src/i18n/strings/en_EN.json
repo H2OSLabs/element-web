@@ -39,7 +39,8 @@
         "showing": {
             "one": "Showing %(count)s of %(total)s event",
             "other": "Showing %(count)s of %(total)s events"
-        }
+        },
+        "button": "Agents"
     },
     "action": {
         "accept": "Accept",

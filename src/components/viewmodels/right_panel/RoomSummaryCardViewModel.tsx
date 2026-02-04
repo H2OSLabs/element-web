@@ -85,6 +85,7 @@ export interface RoomSummaryCardState {
     onRoomThreadsClick: () => void;
     onRoomFilesClick: () => void;
     onRoomExtensionsClick: () => void;
+    onRoomAgentsClick: () => void;
     onRoomPinsClick: () => void;
     onRoomSettingsClick: (ev: Event) => void;
     onLeaveRoomClick: () => void;
@@ -194,6 +195,10 @@ export function useRoomSummaryCardViewModel(
         RightPanelStore.instance.pushCard({ phase: RightPanelPhases.Extensions }, true);
     };
 
+    const onRoomAgentsClick = (): void => {
+        RightPanelStore.instance.pushCard({ phase: RightPanelPhases.AgentsEventViewer }, true);
+    };
+
     const onRoomPinsClick = (): void => {
         PosthogTrackers.trackInteraction("PinnedMessageRoomInfoButton");
         RightPanelStore.instance.pushCard({ phase: RightPanelPhases.PinnedMessages }, true);
@@ -270,6 +275,7 @@ export function useRoomSummaryCardViewModel(
         onRoomThreadsClick,
         onRoomFilesClick,
         onRoomExtensionsClick,
+        onRoomAgentsClick,
         onRoomPinsClick,
         onRoomSettingsClick,
         onLeaveRoomClick,
